@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-// import Tile from './Tile';
-import dog1 from './Images/1.jpg';
-// retrieve images from instagram api
-// pass down each image to each tile
-import dog2 from './Images/2.jpg';
-import dog3 from './Images/3.jpg';
-import dog4 from './Images/4.jpg';
-import dog5 from './Images/5.jpg';
-import dog6 from './Images/6.jpg';
-import dog7 from './Images/7.jpg';
-import dog8 from './Images/9.jpg';
-
+import axios from 'axios';
+import config from './config.js'
 
 class Tiles extends Component {
-	posts = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8];
+	constructor(props) {
+		super(props);
+		
+		this.state = {
+			posts: []
+		};
+	}
 
+	access_token = config.ACCESS_TOKEN;
+	
+	componentDidMount() {
+		axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=` + this.access_token)
+			.then(res => {
+				const posts = res.data.data.map(obj => obj.images.standard_resolution.url).slice(0,8);
+				this.setState({posts});
+			});
+	}
 
 	render() {
 		const row = {
@@ -28,12 +33,12 @@ class Tiles extends Component {
 	
 	return (
 		<div className = "tiles" alt = "tiles" style={row}>
-			{this.posts.map((post, index) =>
-				<img src={post} style={imgStyle} alt={index} />
+			{this.state.posts.map((post, index) =>
+				<img src={post} style={imgStyle} alt={index} key={index}/>
 			)}
 		</div>
-		)
-	}
+	)
+}
 }
 
 export default Tiles;
