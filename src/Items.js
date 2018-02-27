@@ -8,16 +8,6 @@ import dog3 from './Images/3.jpg';
 
 
 class Items extends Component {
-  // createTiles() {
-  //     for (let i = 0; i < 11; i++) {
-  //         const tile = React.createElement("div");
-  //         // tile.setAttribute('class', tile + i);
-  //         // tile.textContent = i;
-  //         this.refs[tiles].appendChild(tile);
-  //     }
-  // }
-
-
 
   render() {
 
@@ -40,7 +30,6 @@ class Items extends Component {
         <div style={row}>
           <img src={dog1} style={column} alt="Dog1"/>
           <h1 className="App-title" style={column} >Dog1</h1>
-          
         </div>
         <div style={row}>
           <h1 className="App-title" style={column} >Dog2</h1>
