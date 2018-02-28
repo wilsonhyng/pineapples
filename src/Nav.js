@@ -12,7 +12,7 @@ class Nav extends Component {
 		}
 
 		const navBut = {
-			padding: '20px 40px 20px 40px'
+			padding: '20px 5% 20px 5%'
 		}
 
 		return (
