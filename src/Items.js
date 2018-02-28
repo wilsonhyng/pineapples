@@ -14,15 +14,20 @@ class Items extends Component {
     const row = {
       display: 'flex',
       flexWrap: 'nowrap',
-      padding: '0 4px',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      backgroundColor: '#f77f00',
+      borderStyle: 'solid',
+      borderWidth: '3px',
+      borderColor: '#ffffff',
+      marginTop: '-3px'
     };
-
+    
     const column = {
       display: 'flex',
       width: '50%',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+
     }
 
     return (
@@ -36,7 +41,7 @@ class Items extends Component {
           <img src={`https://instagram.fsnc1-1.fna.fbcdn.net/vp/630c1de565684be2a095531a496efaac/5B152B70/t51.2885-15/e35/13395066_1304264009603689_21165880_n.jpg`} style={column} alt="Shaved Ice"/>
         </div>
         <div style={row}>
-          <img src={`https://instagram.fsnc1-1.fna.fbcdn.net/vp/98854c1524d71070c6c7546a2462e0ad/5B2B566A/t51.2885-15/e35/12502049_1071043392955814_6281039_n.jpg`} style={column} alt="Acai Bowl" />
+          <img src={`https://instagram.fsnc1-1.fna.fbcdn.net/vp/f6abbdff37b62b58e5083755ae68139f/5B32D2B5/t51.2885-15/e35/28155429_486746838386951_7245121950131945472_n.jpg`} style={column} alt="Acai Bowl" />
           <h1 className="App-title" style={column} >Acai Bowl</h1>
         </div>
       </div>
