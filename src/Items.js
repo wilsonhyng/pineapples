@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
-import dog1 from './Images/1.jpg';
-// retrieve images from instagram api
-// pass down each image to each tile
-import dog2 from './Images/2.jpg';
-import dog3 from './Images/3.jpg';
-
-
 
 class Items extends Component {
-
   render() {
-
     const row = {
       display: 'flex',
       flexWrap: 'nowrap',
@@ -25,6 +16,7 @@ class Items extends Component {
     const column = {
       display: 'flex',
       width: '50%',
+      height: '50%',
       justifyContent: 'center',
       alignItems: 'center',
 
