@@ -10,11 +10,9 @@ class Tiles extends Component {
 			posts: []
 		};
 	}
-
-	access_token = config.ACCESS_TOKEN;
 	
 	componentDidMount() {
-		axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=` + this.access_token)
+		axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=` + config.pineapples)
 			.then(res => {
 				const posts = res.data.data.map(obj => obj.images.standard_resolution.url).slice(0,8);
 				this.setState({posts});
@@ -32,7 +30,8 @@ class Tiles extends Component {
 		};
 		
 		const imgStyle = {
-			width: '25%'
+			width: '25%',
+			height: '25%'
 		}
 	
 	return (
