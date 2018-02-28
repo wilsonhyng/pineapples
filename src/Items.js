@@ -28,16 +28,16 @@ class Items extends Component {
     return (
       <div className="Items">
         <div style={row}>
-          <img src={dog1} style={column} alt="Dog1"/>
-          <h1 className="App-title" style={column} >Dog1</h1>
+          <img src={`https://instagram.fsnc1-1.fna.fbcdn.net/vp/c56c5287fd7f451a344f3fd0f5b667f0/5B4B830A/t51.2885-15/e35/22710397_546121372398248_3266704464085516288_n.jpg`} style={column} alt="Dole Whip"/>
+          <h1 className="App-title" style={column} >Dole Whip</h1>
         </div>
         <div style={row}>
-          <h1 className="App-title" style={column} >Dog2</h1>
-          <img src={dog2} style={column} alt="Dog2"/>
+          <h1 className="App-title" style={column} >Shaved Ice</h1>
+          <img src={`https://instagram.fsnc1-1.fna.fbcdn.net/vp/630c1de565684be2a095531a496efaac/5B152B70/t51.2885-15/e35/13395066_1304264009603689_21165880_n.jpg`} style={column} alt="Shaved Ice"/>
         </div>
         <div style={row}>
-          <img src={dog3} style={column} alt="Dog3" />
-          <h1 className="App-title" style={column} >Dog3</h1>
+          <img src={`https://instagram.fsnc1-1.fna.fbcdn.net/vp/98854c1524d71070c6c7546a2462e0ad/5B2B566A/t51.2885-15/e35/12502049_1071043392955814_6281039_n.jpg`} style={column} alt="Acai Bowl" />
+          <h1 className="App-title" style={column} >Acai Bowl</h1>
         </div>
       </div>
     )
