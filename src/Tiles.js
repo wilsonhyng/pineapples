@@ -25,6 +25,10 @@ class Tiles extends Component {
 		const row = {
 			display: 'flex',
 			flexWrap: 'wrap',
+			borderStyle: 'solid',
+			borderWidth: '3px',
+			borderColor: '#ffffff',
+			marginBottom: '-3px'
 		};
 		
 		const imgStyle = {
