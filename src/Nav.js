@@ -9,6 +9,12 @@ class Nav extends Component {
 		const navStyle = {
 			display: 'flex',
 			justifyContent: 'center',
+			backgroundColor: '#f77f00',
+			borderStyle: 'solid',
+			borderWidth: '3px',
+			borderColor: '#ffffff',
+			marginBottom: '-3px',
+			color: '#ffffff',
 		}
 
 		const navBut = {
